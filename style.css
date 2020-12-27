@@ -1,0 +1,193 @@
+/* Global Styles */ 
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+html {
+    /*He put this font-size so that everything is 10px*/ 
+    font-size: 62.5%; 
+}
+
+h1 {
+    font-size: 2.6rem; 
+}
+
+h2 {
+    font-size: 4.8rem; 
+}
+
+h3 {
+    font-size: 3rem; 
+    font-weight: normal; 
+}
+
+li, button, label, input, p {
+    font-size: 2rem; 
+}
+
+h4, h5 {
+    font-size: 2.8rem; 
+}
+
+a {
+    color: white; 
+    text-decoration: none; 
+}
+
+button {
+    padding: 2rem 6rem; 
+    background: #4c6e97; 
+    border: none; 
+    color: white; 
+    font-size: 1.8rem; 
+    cursor: pointer; 
+}
+
+/* Nav Section w/ Hero */ 
+
+.main-head {
+    background: #131c27; 
+    color: white; 
+}
+
+nav {
+    min-height: 10vh; 
+    padding: 2rem; 
+    display: flex; 
+    width: 90%; 
+    margin: auto; 
+    align-items: center; 
+    flex-wrap: wrap; 
+}
+
+ul {
+    display: flex; 
+    flex: 1 1 40rem; 
+    justify-content: space-around; 
+    align-items: center; 
+    list-style: none; 
+}
+
+#logo {
+    flex: 1 1 40rem; 
+}
+
+.hero {
+    min-height: 90vh; 
+    background: url("https://images.unsplash.com/photo-1507812984078-917a274065be?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8YWlycGxhbmV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");  
+    background-repeat: repeat; 
+    background-size: contain; 
+    background-position: center; 
+    color: white; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+h3 {
+    padding: 2rem 0; 
+}
+
+@media screen and (max-width: 932px) {
+    nav {
+        text-align: center;
+    }
+    #logo {
+        padding: 2rem; 
+    }
+}
+
+/* Media Queries */ 
+
+@media screen and (max-width: 700px) {
+    .hero h2 {
+        font-size: 3.8rem; 
+    }
+    .hero h3 {
+        font-size: 2rem 
+    }
+    .hero button {
+        padding: 1rem 4rem; 
+    }
+}
+
+/* ---- locations Section ---- */ 
+
+#locations {
+    min-height: 100vh; 
+    /*Add background image properties*/ 
+    display: flex; 
+    align-items: center; 
+    position: relative; 
+}
+
+.locations-head {
+    width: 90%; 
+    margin: auto; 
+}
+
+.locations-head h2 {
+    padding: 1rem 0; 
+    text-decoration: underline; 
+}
+
+.locations-head h3 {
+    padding: 4rem 0rem; 
+}
+
+.cloud {
+    position: absolute; 
+    top: 0%; 
+    right: 0%; 
+}
+
+.moving-cloud-1 {
+
+}
+
+.moving-cloud-2 {
+    top: 20%; 
+    
+}
+
+/* Benefits Section */ 
+
+.benefits-head {
+    background: #343c44; 
+    padding: 3rem; 
+    min-height: 30vh;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    color: white; 
+    text-align: center;
+}
+
+.benefits-head h3 {
+    padding: 1rem; 
+}
+
+.cards {
+    width: 90%; 
+    margin: auto; 
+    display: flex; 
+    min-height: 70vh; 
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.card {
+    background: white; 
+    flex: 1 1 40rem; 
+    min-height: 40vh; 
+    margin: 2rem 5rem; 
+    border: 1px solid black; 
+}
+
+
+
